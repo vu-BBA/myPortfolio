@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { FaGithub } from 'react-icons/fa'
+import profileImg from '../assets/profile.jpg'
 
 export default function Hero(){
   const words = ['Full Stack JavaScript Developer', 'AI Automation Learner']
@@ -39,7 +40,7 @@ export default function Hero(){
         </div>
         <div className="flex justify-center md:justify-end">
           <div className="w-56 h-56 md:w-72 md:h-72 bg-gradient-to-br from-neon-green/20 to-neon-cyan/20 rounded-2xl flex items-center justify-center animate-float shadow-2xl shadow-neon-green/30 border border-neon-green/30 overflow-hidden">
-            <img src="/src/assets/profile.jpg" alt="profile" className="w-full h-full object-cover" />
+            <img src={profileImg} alt="profile" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
