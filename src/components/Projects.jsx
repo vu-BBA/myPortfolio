@@ -1,6 +1,18 @@
 import React from 'react'
 
 const projects = [
+  {
+    title: 'Joke app',
+    description:
+      'A RESTful API serving Urdu jokes with random and category-based endpoints, deployed for public use.',
+    link: 'https://bbajokes.vercel.app',
+  },
+  {
+    title: 'Accedemy website with Ai chatbot',
+    description:
+      'Educational platform with AI chatbot for personalized learning, built with css & javascript.',
+    link: 'https://vu-bba.github.io/Brilliant-Future-Academy/',   
+  },
 
   {
     title: 'Online Maze Game for Learning (OMGL)',
@@ -18,7 +30,7 @@ const projects = [
     title: 'Dynamic Newton’s Cradle Simulation',
     description:
       'Physics-based Newton’s Cradle animation demonstrating momentum and energy conservation using JavaScript and CSS animations.',
-    link: 'https://github.com/vu-BBA',
+    link: 'https://vu-bba.github.io/dynamic-newton-cradle/',
   },
   {
     title: 'Urdu Jokes API',
