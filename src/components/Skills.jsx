@@ -8,6 +8,8 @@ const skills = [
   {title:'Tailwind CSS', icon:<FaReact/>, category:'Frontend'},
   {title:'Python (Flask)', icon:<FaPython/>, category:'Backend'},
   {title:'REST APIs', icon:<FaDatabase/>, category:'Backend'},
+  {title:'express.js', icon:<FaJsSquare/>, category:'Backend'},
+  {title:'MongoDB', icon:<FaDatabase/>, category:'Database'},
   {title:'AI Automation', icon:<FaPython/>, category:'AI'},
   {title:'Prompt Engineering', icon:<FaPython/>, category:'AI'}
 ]

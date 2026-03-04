@@ -38,11 +38,18 @@ export default function Hero(){
             <a href="https://github.com/vu-BBA" target="_blank" rel="noreferrer" className="px-4 py-2 border border-neon-cyan rounded-md flex items-center gap-2 text-neon-cyan hover:bg-neon-cyan/10 transition"> <FaGithub/> GitHub</a>
           </div>
         </div>
-        <div className="flex justify-center md:justify-end">
-          <div className="w-56 h-56 md:w-72 md:h-72 bg-gradient-to-br from-neon-green/20 to-neon-cyan/20 rounded-2xl flex items-center justify-center animate-float shadow-2xl shadow-neon-green/30 border border-neon-green/30 overflow-hidden">
-            <img src={profileImg} alt="profile" className="w-full h-full object-cover" />
-          </div>
-        </div>
+       <div className="flex justify-center md:justify-end">
+  <img
+    src={profileImg}
+    alt="profile"
+    className="w-80 h-80 md:w-100 md:h-100 
+               rounded-full 
+               object-cover 
+               border-4 border-neon-green/40 
+               shadow-2xl shadow-neon-green/40 
+               animate-float"
+  />
+</div>
       </div>
     </div>
   )
