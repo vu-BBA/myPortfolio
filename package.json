@@ -2,7 +2,7 @@
   "name": "bba_portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://vu-BBA.github.io/bba_portfolio/",
+  "homepage": "https://vu-BBA.github.io/myPortfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
