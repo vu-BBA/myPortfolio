@@ -3,7 +3,7 @@ import { FaGithub } from 'react-icons/fa'
 import profileImg from '../assets/profile.jpg'
 
 export default function Hero(){
-  const words = ['Full Stack JavaScript Developer', 'AI Automation Learner']
+  const words = ['Full Stack JavaScript Developer', 'AI Automation Learner','Software Engineer','Problem Solver','Prompt Engineer']
   const [text,setText] = useState('')
   const [i,setI] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
