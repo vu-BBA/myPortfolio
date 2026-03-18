@@ -18,7 +18,7 @@ const projects = [
     title: 'Online Maze Game for Learning (OMGL)',
     description:
       'Educational maze game with programming challenges, dynamic maze generation, timer, keys and gates. JavaScript frontend with Flask backend.',
-    link: 'https://github.com/vu-BBA',
+    link: 'https://maze-learn-game.vercel.app/',
   },
   {
     title: 'AI Automation Projects',
