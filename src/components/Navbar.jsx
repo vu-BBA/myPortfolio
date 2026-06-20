@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react'
-import { AiOutlineHome, AiOutlineUser, AiOutlineTool, AiOutlineProject, AiOutlineMail } from 'react-icons/ai'
+import { AiOutlineHome, AiOutlineUser, AiOutlineTool, AiOutlineProject, AiOutlineMail, AiOutlineApi } from 'react-icons/ai'
 import { FiDownload } from 'react-icons/fi'
 
 const links = [
   {id:'home', label:'Home', icon:<AiOutlineHome/>},
   {id:'about', label:'About', icon:<AiOutlineUser/>},
   {id:'skills', label:'Skills', icon:<AiOutlineTool/>},
+  {id:'workflows', label:'Workflows', icon:<AiOutlineApi/>},
   {id:'projects', label:'Projects', icon:<AiOutlineProject/>},
   {id:'contact', label:'Contact', icon:<AiOutlineMail/>}
 ]

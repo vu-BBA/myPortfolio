@@ -18,19 +18,29 @@ const skills = [
   // --- Backend ---
   {title: 'Python', icon: <FaPython/>, category: 'Backend'},
   {title: 'REST APIs', icon: <AiOutlineApi/>, category: 'Backend'}, 
-  {title: 'Express.js', icon: <SiExpress/>, category: 'Backend'}, 
+  {title: 'Express.js', icon: <SiExpress/>, category: 'Backend'},
+  {title: 'Node.js', icon: <SiExpress/>, category: 'Backend'}, 
 
   // --- Database ---
   {title: 'MongoDB', icon: <SiMongodb/>, category: 'Database'},
+  {title: 'PostgreSQL', icon: <FaDatabase/>, category: 'Database'},
+  {title: 'Prisma ORM', icon: <FaDatabase/>, category: 'Database'},
 
   // --- AI & Automation ---
   {title: 'AI Automation', icon: <FaRobot/>, category: 'AI'},
   {title: 'Prompt Engineering', icon: <MdPsychology/>, category: 'AI'},
+  {title: 'LLM Integration', icon: <MdPsychology/>, category: 'AI'},
+  {title: 'AI Agents', icon: <FaRobot/>, category: 'AI'},
+  {title: 'RAG Systems', icon: <FaRobot/>, category: 'AI'},
+  {title: 'n8n Workflows', icon: <AiOutlineApi/>, category: 'AI'},
+  {title: 'Anthropic SDK', icon: <FaRobot/>, category: 'AI'},
 
   // --- Python Libraries ---
   {title: 'NumPy', icon: <SiNumpy/>, category: 'Libraries'},
   {title: 'Pandas', icon: <SiPandas/>, category: 'Libraries'},
   {title: 'Scikit-Learn', icon: <SiScikitlearn/>, category: 'Libraries'},
+  {title: 'Matplotlib', icon: <SiScikitlearn/>, category: 'Libraries'},
+  {title: 'Seaborn', icon: <SiScikitlearn/>, category: 'Libraries'},
   {title: 'Flask / Django', icon: <SiDjango/>, category: 'Libraries'},
   {title: 'Selenium', icon: <SiSelenium/>, category: 'Libraries'}
 ]
@@ -44,7 +54,8 @@ export default function Skills(){
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-neon-green blur-sm animate-pulse_slow" style={{ top: '-3px' }}></div>
       <div className="max-w-5xl mx-auto px-6">
         <h3 className="text-2xl font-semibold text-neon-green">Skills</h3>
-        <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <div className="w-20 h-1 bg-gradient-to-r from-neon-green to-neon-cyan rounded-full mt-2 mb-6"></div>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {visible.map((s, idx) => (
             <div key={idx} className="p-4 bg-slate-800 rounded-xl border border-neon-green/30 shadow-lg shadow-neon-green/10 hover:scale-105 hover:border-neon-green/60 hover:shadow-neon-green/30 transform transition duration-200">
               <div className="flex items-center gap-3">

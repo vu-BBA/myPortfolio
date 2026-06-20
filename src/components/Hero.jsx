@@ -4,7 +4,7 @@ import { FiDownload } from 'react-icons/fi'
 import profileImg from '../assets/profile.jpg'
 
 export default function Hero(){
-  const words = ['Full Stack JavaScript Developer', 'AI Automation Learner','Software Engineer','Problem Solver','Prompt Engineer']
+  const words = ['AI/ML Engineer', 'AI Automation Developer', 'Full Stack JavaScript Developer', 'LLM Integration Specialist', 'Problem Solver']
   const [text,setText] = useState('')
   const [i,setI] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
@@ -47,7 +47,7 @@ export default function Hero(){
           </div>
           
           <p className="text-gray-300 text-lg max-w-xl leading-relaxed">
-            Full Stack JavaScript Developer passionate about building interactive web interfaces and integrating <span className="text-neon-green font-semibold">AI automation</span> to streamline workflows.
+            AI/ML Engineering Intern at DevelopersHub Corporation, building <span className='text-neon-green font-semibold'>AI Agents</span>, automation workflows, and LLM-powered apps. Full Stack JavaScript background with hands-on experience in n8n, Anthropic SDK, and Python ML stack.
           </p>
           
           <div className="flex flex-wrap gap-3 pt-4">
@@ -71,6 +71,10 @@ export default function Hero(){
               className="px-6 py-3 border-2 border-neon-green rounded-lg flex items-center gap-2 text-neon-green hover:bg-neon-green/10 hover:shadow-glow transition duration-300 font-semibold"
             >
               <FiDownload /> Resume
+            </a>
+            <a href="https://www.upwork.com/freelancers/~0192f7886797dfdda9" target="_blank" rel="noreferrer"
+              className="px-4 py-2 border border-neon-green rounded-lg flex items-center gap-2 text-neon-green hover:bg-neon-green/10 transition duration-300 font-semibold text-sm mt-3">
+              💼 Hire on Upwork
             </a>
           </div>
         </div>

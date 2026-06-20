@@ -3,10 +3,10 @@ import { FiArrowRight } from 'react-icons/fi'
 
 export default function About(){
   const highlights = [
-    { label: 'Full Stack Developer', icon: '💻' },
-    { label: 'AI Enthusiast', icon: '🤖' },
-    { label: 'Problem Solver', icon: '🧩' },
-    { label: 'Education Advocate', icon: '📚' }
+    { label: 'AI/ML Engineer', icon: '🤖' },
+    { label: 'AI Automation', icon: '⚙️' },
+    { label: 'LLM Integration', icon: '🧠' },
+    { label: 'Full Stack Dev', icon: '💻' }
   ]
 
   return (
@@ -29,11 +29,11 @@ export default function About(){
             <div className="w-20 h-1 bg-gradient-to-r from-neon-green to-neon-cyan rounded-full mb-6"></div>
             
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              I'm <span className="text-neon-green font-bold">Bushra Basharat</span>, a passionate <span className="text-neon-cyan font-semibold">Full Stack JavaScript Developer</span> focused on building performant web applications and exploring <span className="text-neon-purple font-semibold">AI automation</span> to create smarter workflows.
+              I'm <span className='text-neon-green font-bold'>Bushra Basharat</span>, an <span className='text-neon-cyan font-semibold'>AI/ML Engineering Intern at DevelopersHub Corporation</span>, transitioning from Full Stack development into <span className='text-neon-purple font-semibold'>AI/ML Engineering & Automation</span>.
             </p>
             
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              I have hands-on experience with React, JavaScript (ES6+), Tailwind CSS, Flask backend, and modern AI tools like n8n. I'm passionate about building <span className="text-neon-green font-semibold">educational web experiences</span> and creating solutions that make an impact.
+              I build AI Agents using Anthropic SDK, automation workflows with n8n, and ML models using Python, Scikit-learn, and Pandas. I also have strong Full Stack roots in React, Node.js, and MongoDB — which I now use to ship <span className='text-neon-green font-semibold'>AI-powered full stack apps</span>.
             </p>
 
             <div className="flex gap-4">

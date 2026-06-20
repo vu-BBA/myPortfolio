@@ -16,7 +16,7 @@ export default function Footer(){
             <h3 className="text-2xl font-bold bg-gradient-to-r from-neon-green to-neon-cyan bg-clip-text text-transparent mb-2">
               BBA.dev
             </h3>
-            <p className="text-gray-400 text-sm">Full Stack Developer & AI Enthusiast</p>
+            <p className="text-gray-400 text-sm">Full Stack & AI Automation Developer</p>
           </div>
 
           {/* Quick Links */}

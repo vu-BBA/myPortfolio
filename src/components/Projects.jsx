@@ -2,6 +2,20 @@ import React, { useState } from 'react';
 
 const projects = [
   {
+    title: '🤖 AI Appointment Booking Agent',
+    description: 'Autonomous AI agent that books appointments, sends Gmail confirmations, schedules Google Calendar events, and triggers BullMQ reminders — built with Anthropic Claude SDK + Node.js + PostgreSQL.',
+    link: 'https://github.com/vu-BBA',
+    tags: ['AI Agent', 'Anthropic SDK', 'Node.js', 'Google Calendar', 'BullMQ', 'PostgreSQL'],
+    badge: 'AI Project'
+  },
+  {
+    title: '📰 News Article Classifier (NLP)',
+    description: 'ML model that classifies news articles into categories using Natural Language Processing. Built during AI/ML Engineering Internship at DevelopersHub Corporation.',
+    link: 'https://github.com/vu-BBA',
+    tags: ['Python', 'Scikit-learn', 'NLP', 'Pandas', 'NumPy', 'Matplotlib'],
+    badge: 'ML Project'
+  },
+  {
     title: 'DayFlow — AI Task Manager',
     description:
       'An intelligent productivity suite that uses AI to transform raw notes into structured daily schedules with smart prioritization.',
@@ -34,7 +48,7 @@ const projects = [
   {
     title: 'AI Automation Hub',
     description:
-      'A collection of n8n workflows and prompt-driven automation experiments integrating various APIs and webhooks.',
+      'A growing collection of n8n automation workflows integrating AI APIs, webhooks, Gmail, Google Calendar, and data pipelines — real-world automation for real clients.',
     link: 'https://github.com/vu-BBA',
   },
   {
@@ -47,7 +61,7 @@ const projects = [
     title: 'Professional Portfolio',
     description:
       'Responsive developer portfolio built with React, TypeScript, and Tailwind CSS to showcase my technical journey.',
-    link: 'https://github.com/vu-BBA/Portfolio',
+    link: 'https://github.com/vu-BBA/myPortfolio',
   },
 ];
 
