@@ -20,7 +20,7 @@ const projects = [
   {
     title: '🤖 AI Appointment Booking Agent',
     description: 'Autonomous AI agent that books appointments, sends Gmail confirmations, schedules Google Calendar events, and triggers BullMQ reminders — built with Anthropic Claude SDK + Node.js + PostgreSQL.',
-    link: 'https://github.com/vu-BBA',
+    link: 'https://github.com/vu-BBA/CallAgent',
     tags: ['AI Agent', 'Anthropic SDK', 'Node.js', 'Google Calendar', 'BullMQ', 'PostgreSQL'],
     badge: 'AI Project'
   },
@@ -35,7 +35,7 @@ const projects = [
   {
     title: '📰 News Article Classifier (NLP)',
     description: 'ML model that classifies news articles into categories using Natural Language Processing. Built as part of my AI/ML engineering work with Python and the Scikit-learn stack.',
-    link: 'https://github.com/vu-BBA',
+    link: 'https://github.com/vu-BBA/AI-ML-Engineering-Interns-Task-Phase-2',
     tags: ['Python', 'Scikit-learn', 'NLP', 'Pandas', 'NumPy', 'Matplotlib'],
     badge: 'ML Project'
   },

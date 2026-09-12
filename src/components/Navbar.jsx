@@ -61,7 +61,7 @@ export default function Navbar(){
         </ul>
 
         {/* Hamburger */}
-        <button onClick={()=> setMenuOpen(!menuOpen)} className="md:hidden text-neon-cyan text-3xl focus:outline-none">
+        <button onClick={()=> setMenuOpen(!menuOpen)} aria-label={menuOpen ? "Close menu" : "Open menu"} className="md:hidden text-neon-cyan text-3xl focus:outline-none">
           {menuOpen ? '✕' : '☰'}
         </button>
       </div>

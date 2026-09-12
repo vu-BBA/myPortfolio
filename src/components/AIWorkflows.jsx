@@ -4,13 +4,13 @@ import { SiGmail, SiSupabase, SiNotion, SiDiscord, SiSlack, SiWhatsapp, SiTelegr
 import { AiOutlineApi } from 'react-icons/ai'
 
 const images = [
-  '/workflows iamges/IMG_20260105_185344_956.webp',
-  '/workflows iamges/Screenshot 2026-06-01 121452.png',
-  '/workflows iamges/Screenshot 2026-06-03 151156.png',
-  '/workflows iamges/Screenshot 2026-06-05 174244.png',
-  '/workflows iamges/Screenshot 2026-06-09 101152.png',
-  '/workflows iamges/Screenshot 2026-06-11 101144.png',
-  '/workflows iamges/Screenshot 2026-06-13 182305.png',
+  '/workflows/IMG_20260105_185344_956.webp',
+  '/workflows/Screenshot 2026-06-01 121452.png',
+  '/workflows/Screenshot 2026-06-03 151156.png',
+  '/workflows/Screenshot 2026-06-05 174244.png',
+  '/workflows/Screenshot 2026-06-09 101152.png',
+  '/workflows/Screenshot 2026-06-11 101144.png',
+  '/workflows/Screenshot 2026-06-13 182305.png',
 ]
 
 const tools = [
