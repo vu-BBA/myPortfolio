@@ -4,7 +4,7 @@ import { FiDownload } from 'react-icons/fi'
 import profileImg from '../assets/profile.jpg'
 
 export default function Hero(){
-  const words = ['AI/ML Engineer', 'AI Automation Developer', 'Full Stack JavaScript Developer', 'LLM Integration Specialist', 'Problem Solver']
+  const words = ['AI Automation Engineer', 'GoHighLevel (GHL) Specialist', 'AI Agents & n8n Developer', 'Full Stack JavaScript Developer', 'LLM Integration Specialist']
   const [text,setText] = useState('')
   const [i,setI] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
@@ -47,7 +47,7 @@ export default function Hero(){
           </div>
           
           <p className="text-gray-300 text-lg max-w-xl leading-relaxed">
-            AI/ML Engineering Intern at DevelopersHub Corporation, building <span className='text-neon-green font-semibold'>AI Agents</span>, automation workflows, and LLM-powered apps. Full Stack JavaScript background with hands-on experience in n8n, Anthropic SDK, and Python ML stack.
+            <span className='text-neon-green font-semibold'>AI Automation Engineer</span> building <span className='text-neon-cyan font-semibold'>GoHighLevel (GHL) systems</span>, AI Agents, and automation workflows that book appointments and grow revenue. Full Stack JavaScript background with hands-on experience in n8n, GHL, Anthropic SDK, and Python.
           </p>
           
           <div className="flex flex-wrap gap-3 pt-4">

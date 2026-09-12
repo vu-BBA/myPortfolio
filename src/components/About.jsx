@@ -3,8 +3,8 @@ import { FiArrowRight } from 'react-icons/fi'
 
 export default function About(){
   const highlights = [
-    { label: 'AI/ML Engineer', icon: '🤖' },
-    { label: 'AI Automation', icon: '⚙️' },
+    { label: 'AI Automation Engineer', icon: '🤖' },
+    { label: 'GoHighLevel (GHL)', icon: '🚀' },
     { label: 'LLM Integration', icon: '🧠' },
     { label: 'Full Stack Dev', icon: '💻' }
   ]
@@ -29,11 +29,11 @@ export default function About(){
             <div className="w-20 h-1 bg-gradient-to-r from-neon-green to-neon-cyan rounded-full mb-6"></div>
             
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              I'm <span className='text-neon-green font-bold'>Bushra Basharat</span>, an <span className='text-neon-cyan font-semibold'>AI/ML Engineering Intern at DevelopersHub Corporation</span>, transitioning from Full Stack development into <span className='text-neon-purple font-semibold'>AI/ML Engineering & Automation</span>.
+              I'm <span className='text-neon-green font-bold'>Bushra Basharat</span>, an <span className='text-neon-cyan font-semibold'>AI Automation Engineer</span> focused on <span className='text-neon-purple font-semibold'>GoHighLevel (GHL), AI Agents and workflow automation</span> that help businesses capture, nurture and convert leads on autopilot.
             </p>
             
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              I build AI Agents using Anthropic SDK, automation workflows with n8n, and ML models using Python, Scikit-learn, and Pandas. I also have strong Full Stack roots in React, Node.js, and MongoDB — which I now use to ship <span className='text-neon-green font-semibold'>AI-powered full stack apps</span>.
+              I build complete <span className='text-neon-cyan font-semibold'>GoHighLevel systems</span> — funnels, pipelines, calendars, workflows, snapshots and AI Employee — plus AI Agents using Anthropic SDK and automation workflows with n8n. With strong Full Stack roots in React, Node.js and MongoDB, I ship <span className='text-neon-green font-semibold'>AI-powered full stack apps</span> end to end.
             </p>
 
             <div className="flex gap-4">

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { AiOutlineHome, AiOutlineUser, AiOutlineTool, AiOutlineProject, AiOutlineMail, AiOutlineApi } from 'react-icons/ai'
+import { FaFunnelDollar } from 'react-icons/fa'
 import { FiDownload } from 'react-icons/fi'
 
 const links = [
@@ -7,6 +8,7 @@ const links = [
   {id:'about', label:'About', icon:<AiOutlineUser/>},
   {id:'skills', label:'Skills', icon:<AiOutlineTool/>},
   {id:'workflows', label:'Workflows', icon:<AiOutlineApi/>},
+  {id:'ghl', label:'GHL', icon:<FaFunnelDollar/>},
   {id:'projects', label:'Projects', icon:<AiOutlineProject/>},
   {id:'contact', label:'Contact', icon:<AiOutlineMail/>}
 ]
@@ -34,14 +36,14 @@ export default function Navbar(){
 
   return (
     <nav className="fixed w-full z-30 glass backdrop-blur-xl border-b border-neon-green/30 shadow-lg shadow-neon-green/20">
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="font-bold text-2xl bg-gradient-to-r from-neon-green to-neon-cyan bg-clip-text text-transparent hover:scale-110 transition-transform">BBA.dev</div>
 
         {/* Desktop nav */}
         <ul className="hidden md:flex gap-1 items-center">
           {links.map(l=> (
             <li key={l.id}>
-              <a href={`#${l.id}`} className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-300 font-semibold ${
+              <a href={`#${l.id}`} className={`flex items-center gap-2 px-3 lg:px-4 py-2 rounded-lg transition-all duration-300 font-semibold ${
                 active===l.id
                   ? 'bg-gradient-to-r from-neon-green/30 to-neon-cyan/30 text-neon-green border border-neon-green/60 shadow-lg shadow-neon-green/30'
                   : 'text-gray-400 hover:text-neon-cyan hover:bg-neon-green/10 hover:border hover:border-neon-green/30'

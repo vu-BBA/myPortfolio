@@ -1,14 +1,20 @@
 import React, { useState } from 'react'
 // 1. Font Awesome Icons
-import { FaJsSquare, FaReact, FaPython, FaDatabase, FaRobot, FaHtml5 } from 'react-icons/fa'
+import { FaJsSquare, FaReact, FaPython, FaDatabase, FaRobot, FaHtml5, FaFunnelDollar, FaCogs, FaLayerGroup, FaSitemap, FaCalendarCheck, FaMicrophone, FaEnvelopeOpenText } from 'react-icons/fa'
 // 2. Simple Icons (Most of your tech stack)
-import { SiTailwindcss, SiMongodb, SiExpress, SiNumpy, SiPandas, SiScikitlearn, SiDjango, SiSelenium } from 'react-icons/si'
+import { SiTailwindcss, SiMongodb, SiExpress, SiNumpy, SiPandas, SiScikitlearn, SiDjango, SiSelenium, SiTwilio, SiMailgun, SiStripe, SiZapier } from 'react-icons/si'
 // 3. Ant Design Icons
 import { AiOutlineApi } from 'react-icons/ai'
 // 4. Material Design Icons
 import { MdPsychology } from 'react-icons/md'
 
 const skills = [
+  // --- GoHighLevel (GHL) ---
+  {title: 'GoHighLevel (GHL)', icon: <FaFunnelDollar/>, category: 'GHL'},
+  {title: 'GHL Workflows', icon: <FaCogs/>, category: 'GHL'},
+  {title: 'GHL Funnel Builder', icon: <FaFunnelDollar/>, category: 'GHL'},
+  {title: 'Snapshots & Subaccounts', icon: <FaLayerGroup/>, category: 'GHL'},
+
   // --- Frontend ---
   {title: 'JavaScript (ES6+)', icon: <FaJsSquare/>, category: 'Frontend'},
   {title: 'React.js', icon: <FaReact/>, category: 'Frontend'},
@@ -34,6 +40,20 @@ const skills = [
   {title: 'RAG Systems', icon: <FaRobot/>, category: 'AI'},
   {title: 'n8n Workflows', icon: <AiOutlineApi/>, category: 'AI'},
   {title: 'Anthropic SDK', icon: <FaRobot/>, category: 'AI'},
+
+  // --- GoHighLevel (GHL) Advanced ---
+  {title: 'GHL Pipelines & CRM', icon: <FaSitemap/>, category: 'GHL'},
+  {title: 'GHL Calendars & Booking', icon: <FaCalendarCheck/>, category: 'GHL'},
+  {title: 'Conversation AI / AI Employee', icon: <FaRobot/>, category: 'GHL'},
+  {title: 'Voice AI', icon: <FaMicrophone/>, category: 'GHL'},
+  {title: 'Email & SMS Marketing', icon: <FaEnvelopeOpenText/>, category: 'GHL'},
+  {title: 'GHL API v2', icon: <AiOutlineApi/>, category: 'GHL'},
+
+  // --- Integrations ---
+  {title: 'Twilio', icon: <SiTwilio/>, category: 'Integrations'},
+  {title: 'Mailgun', icon: <SiMailgun/>, category: 'Integrations'},
+  {title: 'Stripe', icon: <SiStripe/>, category: 'Integrations'},
+  {title: 'Zapier', icon: <SiZapier/>, category: 'Integrations'},
 
   // --- Python Libraries ---
   {title: 'NumPy', icon: <SiNumpy/>, category: 'Libraries'},
