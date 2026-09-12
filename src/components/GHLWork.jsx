@@ -104,6 +104,71 @@ const integrations = [
 ]
 
 /* ------------------------------------------------------------------ */
+/*  Real builds — screenshots from live subaccounts                    */
+/* ------------------------------------------------------------------ */
+const showcase = [
+  {
+    img: '/ghl/workflow-pi-lead-followup.jpg',
+    title: 'PI Lead Follow-Up Automation',
+    caption: 'Form trigger → instant acknowledgment SMS → opportunity created → lead tagged → call task for staff → backup email. Zero manual steps.',
+    tags: ['Workflows', 'SMS', 'Tasks']
+  },
+  {
+    img: '/ghl/workflow-legal-intake-full.jpg',
+    title: 'Legal Intake — Full Automation Map',
+    caption: 'Branching workflow: new vs retained clients get different paths — confirmation emails, Google Calendar events, tags and review requests.',
+    tags: ['Workflows', 'Branching', 'Calendar']
+  },
+  {
+    img: '/ghl/pipeline-legal-case-intake.jpg',
+    title: 'Legal Case Intake Pipeline',
+    caption: 'CRM pipeline with stages New Inquiry → Consultation Booked → Retainer Sent → Case Won, with live contacts moving through.',
+    tags: ['Pipelines', 'CRM']
+  },
+  {
+    img: '/ghl/email-appointment-confirmation.jpg',
+    title: 'Custom HTML Email Template',
+    caption: 'Branded appointment-confirmation email hand-coded in the GHL template builder with {{contact}} and {{appointment}} merge fields.',
+    tags: ['Email Templates', 'HTML', 'Merge Fields']
+  },
+  {
+    img: '/ghl/csv-contact-import-mapping.jpg',
+    title: 'CSV Contact Database Upload',
+    caption: 'Uploaded a client CSV database and mapped every field — names, phones, lead source, case type, tags — into clean GHL contacts.',
+    tags: ['Contacts', 'CSV Import']
+  },
+  {
+    img: '/ghl/workflow-appointment-reminder.jpg',
+    title: 'Appointment Reminder Sequence',
+    caption: 'Appointment-status trigger → email → timed wait → SMS reminder, cutting no-shows automatically.',
+    tags: ['Workflows', 'Email', 'SMS']
+  },
+  {
+    img: '/ghl/funnel-fifth-avenue-pizza.png',
+    title: 'Local Business Funnel + A/B Split',
+    caption: 'Lead-capture funnel built for a local pizza brand, set up with a control/variation split test to optimize conversion.',
+    tags: ['Funnels', 'A/B Testing']
+  },
+  {
+    img: '/ghl/workflows-published-list.png',
+    title: 'Published Automation Suite',
+    caption: 'Seven live workflows: 6-month recall, reminders, instant confirmations, missed-call notifications, no-show reschedule and review requests.',
+    tags: ['Automation', 'Reputation']
+  },
+  {
+    img: '/ghl/workflow-execution-logs.jpg',
+    title: 'Execution Logs — Proof It Runs',
+    caption: 'Real execution history showing every step fired for a live contact — executed, skipped and finished as designed.',
+    tags: ['Logging', 'QA']
+  }
+]
+
+const shareLinks = [
+  { label: '🔗 View a Shared Funnel', href: 'https://affiliates.gohighlevel.com/?fp_ref=cofix33&funnel_share=6aa39317ed7cc4adc4a30b2b' },
+  { label: '🔗 View a Shared Workflow', href: 'https://affiliates.gohighlevel.com/?fp_ref=cofix33&share=kUBntZgL0p2c7HjhlMP6' }
+]
+
+/* ------------------------------------------------------------------ */
 /*  Delivery process                                                   */
 /* ------------------------------------------------------------------ */
 const process = [
@@ -174,6 +239,61 @@ export default function GHLWork() {
                 {openCard === idx ? 'Hide details' : 'View details'}
               </span>
             </button>
+          ))}
+        </div>
+
+        {/* Real builds gallery */}
+        <h4 className="text-xl font-semibold text-neon-cyan mb-2 flex items-center gap-2">
+          <FaChartLine className="text-neon-green" /> Real Builds From Live Subaccounts
+        </h4>
+        <p className="text-gray-400 text-sm mb-6">
+          Screenshots from actual GoHighLevel accounts I've set up — funnels, pipelines, workflows,
+          email templates and CSV contact imports. Click any image to open it full size.
+        </p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+          {showcase.map((s, idx) => (
+            <a
+              key={idx}
+              href={s.img}
+              target="_blank"
+              rel="noreferrer"
+              className="group block rounded-xl overflow-hidden bg-slate-800/70 border border-neon-green/25 hover:border-neon-green/60 hover:shadow-lg hover:shadow-neon-green/15 transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <div className="h-44 overflow-hidden bg-slate-900 flex items-center justify-center">
+                <img
+                  src={s.img}
+                  alt={s.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-4">
+                <p className="font-bold text-neon-green text-sm mb-1.5">{s.title}</p>
+                <p className="text-gray-400 text-xs leading-relaxed mb-3">{s.caption}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {s.tags.map((t, i) => (
+                    <span key={i} className="text-[10px] px-2 py-0.5 rounded-full border border-neon-cyan/30 text-neon-cyan bg-slate-900/60">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        {/* Share links */}
+        <div className="flex flex-wrap justify-center gap-3 mb-16">
+          {shareLinks.map((l, idx) => (
+            <a
+              key={idx}
+              href={l.href}
+              target="_blank"
+              rel="noreferrer"
+              className="px-5 py-2.5 border-2 border-neon-green rounded-lg text-neon-green hover:bg-neon-green/10 hover:shadow-glow transition duration-300 font-semibold text-sm"
+            >
+              {l.label}
+            </a>
           ))}
         </div>
 

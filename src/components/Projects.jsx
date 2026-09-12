@@ -5,7 +5,7 @@ const projects = [
     title: '🚀 GoHighLevel Funnel & Automation System',
     description:
       'Complete GoHighLevel build: lead-capture funnel, CRM pipeline, appointment calendars and multi-step email/SMS follow-up workflows that move a lead from ad click to booked appointment on autopilot.',
-    link: 'https://www.upwork.com/freelancers/~0192f7886797dfdda9',
+    link: 'https://affiliates.gohighlevel.com/?fp_ref=cofix33&funnel_share=6aa39317ed7cc4adc4a30b2b',
     tags: ['GoHighLevel', 'Funnels', 'Pipelines', 'Calendars', 'Workflows', 'Twilio', 'Mailgun'],
     badge: 'GHL Project'
   },
@@ -13,7 +13,7 @@ const projects = [
     title: '🤖 GHL AI Employee + Speed-to-Lead',
     description:
       'Trained Conversation AI / AI Employee inside GHL that qualifies leads, answers FAQs and books appointments 24/7 — paired with missed-call text back and instant speed-to-lead follow-up.',
-    link: 'https://www.upwork.com/freelancers/~0192f7886797dfdda9',
+    link: 'https://affiliates.gohighlevel.com/?fp_ref=cofix33&share=kUBntZgL0p2c7HjhlMP6',
     tags: ['GoHighLevel', 'Conversation AI', 'Voice AI', 'Missed-Call Text Back', 'Lead Nurturing'],
     badge: 'GHL Project'
   },
