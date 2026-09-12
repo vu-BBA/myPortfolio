@@ -32,30 +32,30 @@ styles = getSampleStyleSheet()
 
 name_style = ParagraphStyle(
     "Name", parent=styles["Title"], fontName="Helvetica-Bold",
-    fontSize=20, leading=24, textColor=DARK, alignment=TA_CENTER, spaceAfter=2,
+    fontSize=19, leading=22, textColor=DARK, alignment=TA_CENTER, spaceAfter=2,
 )
 role_style = ParagraphStyle(
-    "Role", fontName="Helvetica-Bold", fontSize=11, leading=13.5,
+    "Role", fontName="Helvetica-Bold", fontSize=10.5, leading=12.5,
     textColor=ACCENT, alignment=TA_CENTER, spaceAfter=4,
 )
 contact_style = ParagraphStyle(
     "Contact", fontName="Helvetica", fontSize=8.3, leading=10.8,
-    textColor=MUTED, alignment=TA_CENTER, spaceAfter=1,
+    textColor=MUTED, alignment=TA_CENTER, spaceAfter=0.8,
 )
 h2_style = ParagraphStyle(
     "H2", fontName="Helvetica-Bold", fontSize=10.5, leading=13,
-    textColor=ACCENT, spaceBefore=7, spaceAfter=1,
+    textColor=ACCENT, spaceBefore=6, spaceAfter=0.8,
 )
 body_style = ParagraphStyle(
-    "Body", fontName="Helvetica", fontSize=8.7, leading=11.6,
+    "Body", fontName="Helvetica", fontSize=8.3, leading=10.7,
     textColor=DARK, alignment=TA_JUSTIFY, spaceAfter=3,
 )
 bullet_style = ParagraphStyle(
-    "Bullet", parent=body_style, alignment=TA_JUSTIFY, spaceAfter=1,
+    "Bullet", parent=body_style, alignment=TA_JUSTIFY, spaceAfter=0.8,
 )
 job_style = ParagraphStyle(
-    "Job", fontName="Helvetica-Bold", fontSize=9.1, leading=11.8,
-    textColor=DARK, spaceBefore=4, spaceAfter=1,
+    "Job", fontName="Helvetica-Bold", fontSize=8.7, leading=11.0,
+    textColor=DARK, spaceBefore=4, spaceAfter=0.8,
 )
 sub_style = ParagraphStyle(
     "Sub", fontName="Helvetica-Oblique", fontSize=8.3, leading=10.5,
@@ -89,7 +89,7 @@ def build():
     doc = SimpleDocTemplate(
         OUT, pagesize=A4,
         leftMargin=14 * mm, rightMargin=14 * mm,
-        topMargin=11 * mm, bottomMargin=11 * mm,
+        topMargin=10 * mm, bottomMargin=10 * mm,
         title="Bushra Basharat - CV",
         author="Bushra Basharat",
     )
@@ -98,7 +98,7 @@ def build():
 
     # ---------------- Header ----------------
     s.append(Paragraph("BUSHRA BASHARAT", name_style))
-    s.append(Paragraph("AI Automation Engineer &nbsp;|&nbsp; GoHighLevel (GHL) Specialist", role_style))
+    s.append(Paragraph("AI Automation Engineer &nbsp;|&nbsp; GoHighLevel (GHL) &amp; n8n Expert", role_style))
     s.append(Paragraph(
         "Haroonabad, Punjab, Pakistan &nbsp;|&nbsp; 03087920448 &nbsp;|&nbsp; bushrach147hnd@gmail.com",
         contact_style,
@@ -108,7 +108,7 @@ def build():
         "&nbsp;|&nbsp; Portfolio: my-portfolio-bba.vercel.app",
         contact_style,
     ))
-    s.append(Spacer(1, 3))
+    s.append(Spacer(1, 1))
     s.append(HRFlowable(width="100%", thickness=1.2, color=ACCENT, spaceAfter=4))
 
     # ---------------- Summary ----------------
@@ -117,7 +117,7 @@ def build():
         "AI Automation Engineer and GoHighLevel (GHL) specialist with a strong foundation in full-stack "
         "development. I design and build complete GHL systems &mdash; funnels, CRM pipelines, appointment "
         "calendars, multi-step workflows, snapshots and AI Employee &mdash; that turn traffic into booked "
-        "appointments and recurring revenue. I also build AI Agents and n8n automations, and ship scalable "
+        "appointments and recurring revenue. Equally expert in n8n, I design complex multi-node automation workflows with AI APIs, webhooks and data pipelines. I also build AI Agents and ship scalable "
         "applications on the MERN stack. Certified JavaScript Full-Stack Developer (Grade: A+) with a passion "
         "for solving data-driven problems using Python.",
         body_style,
@@ -130,9 +130,12 @@ def build():
          "Funnel &amp; website builder, Workflow automation, Pipelines &amp; CRM, Calendars &amp; booking, "
          "Snapshots &amp; subaccount setup, Forms &amp; surveys, Email/SMS marketing, Reputation management, "
          "Conversation AI / AI Employee, Voice AI, missed-call text back, GHL API v2."),
+        ("n8n (Expert)",
+         "Complex multi-node workflows, AI agent nodes, webhook &amp; API integrations, branching logic, "
+         "error handling, data pipelines, Gmail/Google Sheets/WhatsApp/Telegram automations."),
         ("Automation &amp; AI",
-         "n8n workflow automation, AI Agents, LLM integration (Anthropic SDK, OpenAI, Groq), prompt "
-         "engineering, API integration, webhooks, Python (NumPy, Pandas, Matplotlib), Scikit-learn."),
+         "AI Agents, LLM integration (Anthropic SDK, OpenAI, Groq), prompt "
+         "engineering, API integration, Python (NumPy, Pandas, Matplotlib), Scikit-learn."),
         ("Web Development",
          "MERN stack (MongoDB, Express, React, Node.js), JavaScript (ES6+), HTML/CSS, Tailwind CSS, "
          "REST APIs, Vite."),
@@ -180,6 +183,9 @@ def build():
         ("n8n Workflow Automation", "n8n, API Integration",
          "Created automated workflows connecting WhatsApp, Gmail, Google Calendar and Google Sheets for "
          "real-time data management and personal brand automation."),
+        ("AI Automation Hub (n8n)", "n8n, AI APIs, Webhooks",
+         "A growing public collection of production n8n workflows integrating AI APIs, webhooks and data "
+         "pipelines for real clients (github.com/vu-BBA/automations-of-n8n)."),
         ("Online Maze Game for Learning (OMGL)", "C++, Algorithms",
          "Engineered an educational tool using random maze generation algorithms to strengthen logical "
          "thinking and programming fundamentals."),

@@ -190,6 +190,16 @@ export default function GHLWork() {
       <div className="absolute top-10 left-0 w-96 h-96 bg-neon-green/10 rounded-full blur-3xl opacity-20"></div>
       <div className="absolute bottom-10 right-0 w-96 h-96 bg-neon-purple/10 rounded-full blur-3xl opacity-20"></div>
 
+      {/* Top bar */}
+      <div className="max-w-6xl mx-auto px-6 pt-8 relative z-10">
+        <a
+          href="/"
+          className="inline-flex items-center gap-2 text-neon-cyan hover:text-neon-green font-semibold text-sm border border-neon-cyan/40 rounded-lg px-4 py-2 hover:bg-neon-cyan/10 transition duration-300"
+        >
+          ← Back to Home
+        </a>
+      </div>
+
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         {/* Heading */}
         <h3 className="text-2xl md:text-3xl font-semibold text-neon-green text-center">
@@ -200,12 +210,43 @@ export default function GHLWork() {
           I build complete <span className="text-neon-green font-semibold">GoHighLevel</span> systems —
           funnels, CRM, pipelines, workflows and AI — that turn traffic into booked appointments and revenue.
         </p>
-        <div className="flex flex-wrap justify-center gap-2 mb-12">
+        <div className="flex flex-wrap justify-center gap-2 mb-10">
           {['Agency & Local Business', 'SaaS Mode', 'Coaches & Clinics', 'Real Estate'].map(t => (
             <span key={t} className="text-xs px-3 py-1 rounded-full border border-neon-cyan/40 text-neon-cyan bg-slate-800/60">
               {t}
             </span>
           ))}
+        </div>
+
+        {/* Moving screenshots — like the n8n workflows marquee */}
+        <style>{`
+          @keyframes ghlShotScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .ghl-shot { animation: ghlShotScroll 45s linear infinite; }
+          .ghl-shot:hover { animation-play-state: paused; }
+        `}</style>
+        <p className="text-center text-xs uppercase tracking-widest text-neon-cyan/80 mb-3">
+          Live screenshots from real GHL builds — hover to pause, click to open
+        </p>
+        <div className="flex overflow-hidden mb-12 rounded-xl">
+          <div className="flex gap-4 ghl-shot">
+            {[...showcase, ...showcase].map((s, idx) => (
+              <a
+                key={idx}
+                href={s.img}
+                target="_blank"
+                rel="noreferrer"
+                className="flex-shrink-0 w-80 rounded-xl overflow-hidden border border-neon-green/30 hover:border-neon-green/70 hover:shadow-lg hover:shadow-neon-green/25 transition-all duration-300 bg-slate-900"
+              >
+                <img src={s.img} alt={s.title} loading="lazy" className="w-full h-44 object-cover object-top transition-transform duration-500 hover:scale-105" />
+                <div className="px-3 py-2 text-xs font-semibold text-neon-green bg-slate-800/90 whitespace-nowrap overflow-hidden text-ellipsis">
+                  {s.title}
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
 
         {/* Service grid */}

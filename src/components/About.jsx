@@ -5,7 +5,7 @@ export default function About(){
   const highlights = [
     { label: 'AI Automation Engineer', icon: '🤖' },
     { label: 'GoHighLevel (GHL)', icon: '🚀' },
-    { label: 'LLM Integration', icon: '🧠' },
+    { label: 'n8n Automation', icon: '⚙️' },
     { label: 'Full Stack Dev', icon: '💻' }
   ]
 
@@ -33,7 +33,7 @@ export default function About(){
             </p>
             
             <p className="text-gray-300 text-lg leading-relaxed mb-8">
-              I build complete <span className='text-neon-cyan font-semibold'>GoHighLevel systems</span> — funnels, pipelines, calendars, workflows, snapshots and AI Employee — plus AI Agents using Anthropic SDK and automation workflows with n8n. With strong Full Stack roots in React, Node.js and MongoDB, I ship <span className='text-neon-green font-semibold'>AI-powered full stack apps</span> end to end.
+              I build complete <span className='text-neon-cyan font-semibold'>GoHighLevel systems</span> — funnels, pipelines, calendars, workflows, snapshots and AI Employee — and I'm equally deep in <span className='text-neon-green font-semibold'>n8n</span>, designing expert-level automation workflows with AI APIs, webhooks and data pipelines. With strong Full Stack roots in React, Node.js and MongoDB, I ship <span className='text-neon-green font-semibold'>AI-powered full stack apps</span> end to end.
             </p>
 
             <div className="flex gap-4">

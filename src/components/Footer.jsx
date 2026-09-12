@@ -16,7 +16,7 @@ export default function Footer(){
             <h3 className="text-2xl font-bold bg-gradient-to-r from-neon-green to-neon-cyan bg-clip-text text-transparent mb-2">
               BBA.dev
             </h3>
-            <p className="text-gray-400 text-sm">AI Automation Engineer &amp; GoHighLevel (GHL) Specialist</p>
+            <p className="text-gray-400 text-sm">AI Automation Engineer — GoHighLevel (GHL) &amp; n8n Expert</p>
           </div>
 
           {/* Quick Links */}
@@ -24,7 +24,7 @@ export default function Footer(){
             <p className="text-neon-green font-semibold mb-3 text-sm">Quick Links</p>
             <div className="flex justify-center gap-6 text-sm">
               <a href="#about" className="text-gray-400 hover:text-neon-green transition-colors">About</a>
-              <a href="#ghl" className="text-gray-400 hover:text-neon-green transition-colors">GHL Work</a>
+              <a href="/ghl.html" className="text-gray-400 hover:text-neon-green transition-colors">GHL Work</a>
               <a href="#projects" className="text-gray-400 hover:text-neon-green transition-colors">Projects</a>
               <a href="#contact" className="text-gray-400 hover:text-neon-green transition-colors">Contact</a>
             </div>

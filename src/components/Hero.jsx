@@ -4,7 +4,7 @@ import { FiDownload } from 'react-icons/fi'
 import profileImg from '../assets/profile.jpg'
 
 export default function Hero(){
-  const words = ['AI Automation Engineer', 'GoHighLevel (GHL) Specialist', 'AI Agents & n8n Developer', 'Full Stack JavaScript Developer', 'LLM Integration Specialist']
+  const words = ['AI Automation Engineer', 'GoHighLevel (GHL) Expert', 'n8n Automation Expert', 'AI Agents & LLM Developer', 'Full Stack JavaScript Developer']
   const [text,setText] = useState('')
   const [i,setI] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)

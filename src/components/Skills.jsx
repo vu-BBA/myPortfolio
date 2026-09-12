@@ -9,11 +9,11 @@ import { AiOutlineApi } from 'react-icons/ai'
 import { MdPsychology } from 'react-icons/md'
 
 const skills = [
-  // --- GoHighLevel (GHL) ---
+  // --- GoHighLevel (GHL) + n8n ---
   {title: 'GoHighLevel (GHL)', icon: <FaFunnelDollar/>, category: 'GHL'},
+  {title: 'n8n Automation', icon: <AiOutlineApi/>, category: 'Automation'},
   {title: 'GHL Workflows', icon: <FaCogs/>, category: 'GHL'},
   {title: 'GHL Funnel Builder', icon: <FaFunnelDollar/>, category: 'GHL'},
-  {title: 'Snapshots & Subaccounts', icon: <FaLayerGroup/>, category: 'GHL'},
 
   // --- Frontend ---
   {title: 'JavaScript (ES6+)', icon: <FaJsSquare/>, category: 'Frontend'},
@@ -38,10 +38,10 @@ const skills = [
   {title: 'LLM Integration', icon: <MdPsychology/>, category: 'AI'},
   {title: 'AI Agents', icon: <FaRobot/>, category: 'AI'},
   {title: 'RAG Systems', icon: <FaRobot/>, category: 'AI'},
-  {title: 'n8n Workflows', icon: <AiOutlineApi/>, category: 'AI'},
   {title: 'Anthropic SDK', icon: <FaRobot/>, category: 'AI'},
 
   // --- GoHighLevel (GHL) Advanced ---
+  {title: 'Snapshots & Subaccounts', icon: <FaLayerGroup/>, category: 'GHL'},
   {title: 'GHL Pipelines & CRM', icon: <FaSitemap/>, category: 'GHL'},
   {title: 'GHL Calendars & Booking', icon: <FaCalendarCheck/>, category: 'GHL'},
   {title: 'Conversation AI / AI Employee', icon: <FaRobot/>, category: 'GHL'},
