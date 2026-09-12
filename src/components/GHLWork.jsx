@@ -399,6 +399,55 @@ export default function GHLWork() {
           ))}
         </div>
 
+        {/* Case study */}
+        <h4 className="text-xl font-semibold text-neon-cyan mb-6 flex items-center gap-2">
+          <FaClipboardCheck className="text-neon-green" /> Case Study: Law Firm Lead Intake System
+        </h4>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+          {['Speed-to-lead: every form lead acknowledged in seconds', 'No missed call left unanswered', 'Full pipeline visibility per case stage', 'Reviews requested automatically after consultations'].map((o, i) => (
+            <div key={i} className="p-4 rounded-xl border border-neon-green/30 bg-slate-900/70 text-xs text-gray-300 flex items-start gap-2">
+              <span className="text-neon-green">✔</span><span>{o}</span>
+            </div>
+          ))}
+        </div>
+        <div className="rounded-2xl border border-neon-cyan/30 bg-slate-900/70 p-6 md:p-8 mb-16">
+          <div className="grid md:grid-cols-3 gap-6">
+            <div>
+              <p className="text-neon-green font-bold mb-2 text-sm uppercase tracking-wider">Problem</p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                A law firm's consultation requests arrived by form, phone and referral — followed up manually.
+                Responses were slow, there was no pipeline visibility, missed calls went cold, and an existing
+                contact list sat unused in a spreadsheet.
+              </p>
+            </div>
+            <div>
+              <p className="text-neon-cyan font-bold mb-2 text-sm uppercase tracking-wider">What I Built</p>
+              <ul className="text-gray-400 text-sm leading-relaxed space-y-1.5">
+                <li>▸ Intake form trigger → instant acknowledgment SMS</li>
+                <li>▸ "Legal Case Intake" pipeline: New Inquiry → Consultation Booked → Retainer Sent → Case Won</li>
+                <li>▸ Branching workflows for new vs retained clients: branded confirmation email (custom HTML + merge fields), Google Calendar event, staff call task</li>
+                <li>▸ CSV database upload with full field mapping (case type, tags, lead source)</li>
+                <li>▸ Reminder, no-show reschedule and review-request automations</li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-neon-purple font-bold mb-2 text-sm uppercase tracking-wider">Result</p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Every lead now gets an instant reply, every case has a visible stage, staff get call tasks
+                automatically, the old spreadsheet became a bookable database, and review requests run without
+                anyone touching them.
+              </p>
+              <div className="flex gap-2 mt-4">
+                {['/ghl/workflow-pi-lead-followup.jpg', '/ghl/pipeline-legal-case-intake.jpg', '/ghl/email-appointment-confirmation.jpg'].map((img, i) => (
+                  <a key={i} href={img} target="_blank" rel="noreferrer" className="w-1/3 rounded-lg overflow-hidden border border-neon-cyan/30 hover:border-neon-cyan/70 transition">
+                    <img src={img} alt="Case study screenshot" loading="lazy" className="w-full h-14 object-cover object-top" />
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="text-center p-8 rounded-2xl border border-neon-green/30 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
           <p className="text-lg text-gray-200 mb-4">
