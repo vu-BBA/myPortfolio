@@ -448,6 +448,29 @@ export default function GHLWork() {
           </div>
         </div>
 
+        {/* Testimonials */}
+        <h4 className="text-xl font-semibold text-neon-cyan mb-6 flex items-center gap-2">
+          <FaStar className="text-neon-green" /> What People Say (LinkedIn)
+        </h4>
+        <div className="grid md:grid-cols-2 gap-5 mb-16">
+          <div className="p-6 rounded-xl border border-neon-green/30 bg-slate-900/70 hover:border-neon-green/60 transition-all duration-300">
+            <p className="text-gray-300 text-sm leading-relaxed mb-4">
+              "This is an incredible breakdown! Most local businesses don't realize how much revenue they lose
+              from missed messages and zero follow-ups. Packaging this as a GHL snapshot makes it so scalable.
+              Can't wait to see the results once this goes live with Fifth Avenue Pizza! 🎁"
+            </p>
+            <p className="text-neon-green font-bold text-sm">Amjad Ullah</p>
+            <p className="text-gray-500 text-xs">Full-Stack Software Builder | MERN — on LinkedIn</p>
+          </div>
+          <div className="p-6 rounded-xl border border-neon-green/30 bg-slate-900/70 hover:border-neon-green/60 transition-all duration-300">
+            <p className="text-gray-300 text-sm leading-relaxed mb-4">
+              "You did a splendid work…"
+            </p>
+            <p className="text-neon-green font-bold text-sm">Naeema Annum Nisar</p>
+            <p className="text-gray-500 text-xs">Backend AI Engineering | AI Automation — on LinkedIn</p>
+          </div>
+        </div>
+
         {/* CTA */}
         <div className="text-center p-8 rounded-2xl border border-neon-green/30 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">
           <p className="text-lg text-gray-200 mb-4">
