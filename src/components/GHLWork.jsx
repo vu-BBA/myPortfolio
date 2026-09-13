@@ -122,7 +122,7 @@ const showcase = [
   },
   {
     img: 'ghl/pipeline-legal-case-intake.jpg',
-    title: 'Legal Case Intake Pipeline',
+    title: 'CSV Contact Database Upload',
     caption: 'CRM pipeline with stages New Inquiry → Consultation Booked → Retainer Sent → Case Won, with live contacts moving through.',
     tags: ['Pipelines', 'CRM']
   },
