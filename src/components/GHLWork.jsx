@@ -251,7 +251,7 @@ export default function GHLWork() {
           
         `}</style>
         <p className="text-center text-xs uppercase tracking-widest text-neon-cyan/80 mb-3">
-          Live screenshots from real GHL builds — hover to pause, click to open
+          Live screenshots from real GHL builds — click any card to open full size
         </p>
         <div className="flex overflow-hidden mb-12 rounded-xl">
           <div className="flex gap-4 ghl-shot">
