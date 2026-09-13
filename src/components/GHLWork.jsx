@@ -163,6 +163,29 @@ const showcase = [
   }
 ]
 
+const testimonials = [
+  {
+    name: 'Amjad Ullah',
+    role: 'Full-Stack Software Builder | MERN — on LinkedIn',
+    quote: "This is an incredible breakdown! Most local businesses don't realize how much revenue they lose from missed messages and zero follow-ups. Packaging this as a GHL snapshot makes it so scalable. Can't wait to see the results once this goes live with Fifth Avenue Pizza! 🎁"
+  },
+  {
+    name: 'Muhammad Aqeel',
+    role: 'Healthcare Entrepreneur & Pharmacist — on LinkedIn',
+    quote: "I came across your AI Voice Calling Assistant project built with n8n, Vapi AI, and Groq. The end-to-end automation pipeline you designed is impressive, especially the call analysis and follow-up workflow. I am particularly interested in exploring how this solution can be adapted for pharmacy and healthcare use cases."
+  },
+  {
+    name: 'Dima K',
+    role: 'n8n & Make.com Automation Specialist — on LinkedIn',
+    quote: "The alert carrying the visitor's contact, the requested time, and the rejection reason means you can actually act on it, not just know something broke. That is a real step up from where most builds stop. Nice work."
+  },
+  {
+    name: 'Naeema Annum Nisar',
+    role: 'Backend AI Engineering | AI Automation — on LinkedIn',
+    quote: "You did a splendid work…"
+  }
+]
+
 const shareLinks = [
   { label: '🔗 View a Shared Funnel', href: 'https://affiliates.gohighlevel.com/?fp_ref=cofix33&funnel_share=6aa39317ed7cc4adc4a30b2b' },
   { label: '🔗 View a Shared Workflow', href: 'https://affiliates.gohighlevel.com/?fp_ref=cofix33&share=kUBntZgL0p2c7HjhlMP6' }
@@ -453,22 +476,13 @@ export default function GHLWork() {
           <FaStar className="text-neon-green" /> What People Say (LinkedIn)
         </h4>
         <div className="grid md:grid-cols-2 gap-5 mb-16">
-          <div className="p-6 rounded-xl border border-neon-green/30 bg-slate-900/70 hover:border-neon-green/60 transition-all duration-300">
-            <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              "This is an incredible breakdown! Most local businesses don't realize how much revenue they lose
-              from missed messages and zero follow-ups. Packaging this as a GHL snapshot makes it so scalable.
-              Can't wait to see the results once this goes live with Fifth Avenue Pizza! 🎁"
-            </p>
-            <p className="text-neon-green font-bold text-sm">Amjad Ullah</p>
-            <p className="text-gray-500 text-xs">Full-Stack Software Builder | MERN — on LinkedIn</p>
-          </div>
-          <div className="p-6 rounded-xl border border-neon-green/30 bg-slate-900/70 hover:border-neon-green/60 transition-all duration-300">
-            <p className="text-gray-300 text-sm leading-relaxed mb-4">
-              "You did a splendid work…"
-            </p>
-            <p className="text-neon-green font-bold text-sm">Naeema Annum Nisar</p>
-            <p className="text-gray-500 text-xs">Backend AI Engineering | AI Automation — on LinkedIn</p>
-          </div>
+          {testimonials.map((t, idx) => (
+            <div key={idx} className="p-6 rounded-xl border border-neon-green/30 bg-slate-900/70 hover:border-neon-green/60 hover:shadow-lg hover:shadow-neon-green/10 transition-all duration-300 flex flex-col">
+              <p className="text-gray-300 text-sm leading-relaxed mb-4 flex-1">"{t.quote}"</p>
+              <p className="text-neon-green font-bold text-sm">{t.name}</p>
+              <p className="text-gray-500 text-xs">{t.role}</p>
+            </div>
+          ))}
         </div>
 
         {/* CTA */}
