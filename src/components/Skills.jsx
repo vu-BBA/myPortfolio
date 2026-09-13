@@ -30,7 +30,7 @@ const skills = [
   // --- Database ---
   {title: 'MongoDB', icon: <SiMongodb/>, category: 'Database'},
   {title: 'PostgreSQL', icon: <FaDatabase/>, category: 'Database'},
-  {title: 'Prisma ORM', icon: <FaDatabase/>, category: 'Database'},
+
 
   // --- AI & Automation ---
   {title: 'AI Automation', icon: <FaRobot/>, category: 'AI'},
@@ -53,7 +53,7 @@ const skills = [
   {title: 'Twilio', icon: <SiTwilio/>, category: 'Integrations'},
   {title: 'Mailgun', icon: <SiMailgun/>, category: 'Integrations'},
   {title: 'Stripe', icon: <SiStripe/>, category: 'Integrations'},
-  {title: 'Zapier', icon: <SiZapier/>, category: 'Integrations'},
+
 
   // --- Python Libraries ---
   {title: 'NumPy', icon: <SiNumpy/>, category: 'Libraries'},
@@ -61,8 +61,8 @@ const skills = [
   {title: 'Scikit-Learn', icon: <SiScikitlearn/>, category: 'Libraries'},
   {title: 'Matplotlib', icon: <SiScikitlearn/>, category: 'Libraries'},
   {title: 'Seaborn', icon: <SiScikitlearn/>, category: 'Libraries'},
-  {title: 'Flask / Django', icon: <SiDjango/>, category: 'Libraries'},
-  {title: 'Selenium', icon: <SiSelenium/>, category: 'Libraries'}
+
+  
 ]
 
 export default function Skills(){
