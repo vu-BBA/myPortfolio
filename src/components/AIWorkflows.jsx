@@ -48,7 +48,7 @@ export default function AIWorkflows() {
             }
             .scroll-left { animation: scrollLeft 40s linear infinite; }
             .scroll-right { animation: scrollRight 40s linear infinite; }
-            .scroll-left:hover, .scroll-right:hover { animation-play-state: paused; }
+            
           `}</style>
 
           <div className="flex overflow-hidden mb-6">

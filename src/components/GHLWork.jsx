@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {
   FaFunnelDollar, FaCogs, FaLayerGroup, FaSitemap, FaCalendarCheck,
   FaRobot, FaMicrophone, FaStar, FaBolt, FaBullhorn, FaUserCheck, FaChartLine,
-  FaPhoneAlt
+  FaPhoneAlt, FaClipboardCheck
 } from 'react-icons/fa'
 import {
   SiStripe, SiZapier, SiTwilio, SiMailgun, SiMeta, SiGoogleads,
@@ -248,7 +248,7 @@ export default function GHLWork() {
             100% { transform: translateX(-50%); }
           }
           .ghl-shot { animation: ghlShotScroll 45s linear infinite; }
-          .ghl-shot:hover { animation-play-state: paused; }
+          
         `}</style>
         <p className="text-center text-xs uppercase tracking-widest text-neon-cyan/80 mb-3">
           Live screenshots from real GHL builds — hover to pause, click to open
