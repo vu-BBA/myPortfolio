@@ -12,6 +12,7 @@ import {
 import { MdAutorenew, MdSupportAgent } from 'react-icons/md'
 import { AiOutlineApi } from 'react-icons/ai'
 import { FiTarget, FiTrendingUp } from 'react-icons/fi'
+import MarqueeRow from './MarqueeRow'
 
 /* ------------------------------------------------------------------ */
 /*  Core GHL services                                                  */
@@ -242,124 +243,22 @@ export default function GHLWork() {
         </div>
 
         {/* Moving screenshots — like the n8n workflows marquee */}
-        <style>{`
-          @keyframes ghlShotScroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          .ghl-shot { animation: ghlShotScroll 45s linear infinite; }
-          
-        `}</style>
-        <p className="text-center text-xs uppercase tracking-widest text-neon-cyan/80 mb-3">
-          Live screenshots from real GHL builds — click any card to open full size
-        </p>
-        <div className="flex overflow-hidden mb-12 rounded-xl">
-          <div className="flex gap-4 ghl-shot">
-            {[...showcase, ...showcase].map((s, idx) => (
-              <a
-                key={idx}
-                href={s.img}
-                target="_blank"
-                rel="noreferrer"
-                className="flex-shrink-0 w-80 rounded-xl overflow-hidden border border-neon-green/30 hover:border-neon-green/70 hover:shadow-lg hover:shadow-neon-green/25 transition-all duration-300 bg-slate-900"
-              >
-                <img src={s.img} alt={s.title} loading="lazy" className="w-full h-44 object-cover object-top transition-transform duration-500 hover:scale-105" />
-                <div className="px-3 py-2 text-xs font-semibold text-neon-green bg-slate-800/90 whitespace-nowrap overflow-hidden text-ellipsis">
-                  {s.title}
-                </div>
-              </a>
-            ))}
-          </div>
-        </div>
-
-        {/* Service grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-16">
-          {services.map((s, idx) => (
-            <button
-              key={idx}
-              onClick={() => setOpenCard(openCard === idx ? null : idx)}
-              className={`text-left p-5 rounded-xl border transition-all duration-300 transform hover:-translate-y-1 ${
-                openCard === idx
-                  ? 'bg-slate-800 border-neon-green/70 shadow-lg shadow-neon-green/25'
-                  : 'bg-slate-800/70 border-neon-green/25 hover:border-neon-green/60 hover:shadow-lg hover:shadow-neon-green/15'
-              }`}
-            >
-              <div className="flex items-center gap-3 mb-3">
-                <span className="text-3xl text-neon-cyan">{s.icon}</span>
-                <span className="font-bold text-neon-green text-sm leading-tight">{s.title}</span>
-              </div>
-              <p className="text-gray-400 text-xs leading-relaxed">{s.desc}</p>
-              {openCard === idx && (
-                <ul className="mt-3 space-y-1.5 border-t border-neon-green/20 pt-3">
-                  {s.points.map((pt, i) => (
-                    <li key={i} className="flex items-start gap-2 text-xs text-gray-300">
-                      <span className="text-neon-green mt-0.5">▸</span>
-                      <span>{pt}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
-              <span className="block mt-3 text-[10px] uppercase tracking-wider text-neon-cyan/70">
-                {openCard === idx ? 'Hide details' : 'View details'}
-              </span>
-            </button>
-          ))}
-        </div>
-
-        {/* Real builds gallery */}
-        <h4 className="text-xl font-semibold text-neon-cyan mb-2 flex items-center gap-2">
-          <FaChartLine className="text-neon-green" /> Real Builds From Live Subaccounts
-        </h4>
-        <p className="text-gray-400 text-sm mb-6">
-          Screenshots from actual GoHighLevel accounts I've set up — funnels, pipelines, workflows,
-          email templates and CSV contact imports. Click any image to open it full size.
-        </p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+        <MarqueeRow speed={60} className="mb-12 rounded-xl">
           {showcase.map((s, idx) => (
             <a
               key={idx}
               href={s.img}
               target="_blank"
               rel="noreferrer"
-              className="group block rounded-xl overflow-hidden bg-slate-800/70 border border-neon-green/25 hover:border-neon-green/60 hover:shadow-lg hover:shadow-neon-green/15 transition-all duration-300 transform hover:-translate-y-1"
+              className="flex-shrink-0 w-80 rounded-xl overflow-hidden border border-neon-green/30 hover:border-neon-green/70 hover:shadow-lg hover:shadow-neon-green/25 transition-all duration-300 bg-slate-900"
             >
-              <div className="h-44 overflow-hidden bg-slate-900 flex items-center justify-center">
-                <img
-                  src={s.img}
-                  alt={s.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="p-4">
-                <p className="font-bold text-neon-green text-sm mb-1.5">{s.title}</p>
-                <p className="text-gray-400 text-xs leading-relaxed mb-3">{s.caption}</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {s.tags.map((t, i) => (
-                    <span key={i} className="text-[10px] px-2 py-0.5 rounded-full border border-neon-cyan/30 text-neon-cyan bg-slate-900/60">
-                      {t}
-                    </span>
-                  ))}
-                </div>
+              <img src={s.img} alt={s.title} loading="lazy" className="w-full h-44 object-cover object-top transition-transform duration-500 hover:scale-105" />
+              <div className="px-3 py-2 text-xs font-semibold text-neon-green bg-slate-800/90 whitespace-nowrap overflow-hidden text-ellipsis">
+                {s.title}
               </div>
             </a>
           ))}
-        </div>
-
-        {/* Share links */}
-        <div className="flex flex-wrap justify-center gap-3 mb-16">
-          {shareLinks.map((l, idx) => (
-            <a
-              key={idx}
-              href={l.href}
-              target="_blank"
-              rel="noreferrer"
-              className="px-5 py-2.5 border-2 border-neon-green rounded-lg text-neon-green hover:bg-neon-green/10 hover:shadow-glow transition duration-300 font-semibold text-sm"
-            >
-              {l.label}
-            </a>
-          ))}
-        </div>
+        </MarqueeRow>
 
         {/* Revenue plays */}
         <h4 className="text-xl font-semibold text-neon-cyan mb-6 flex items-center gap-2">
@@ -384,27 +283,17 @@ export default function GHLWork() {
         <h4 className="text-xl font-semibold text-neon-cyan mb-6 flex items-center gap-2">
           <FaBolt className="text-neon-green" /> Integrations & Stack
         </h4>
-        <style>{`
-          @keyframes ghlScroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-          }
-          .ghl-scroll { animation: ghlScroll 35s linear infinite; }
-          .ghl-scroll:hover { animation-play-state: paused; }
-        `}</style>
-        <div className="flex overflow-hidden mb-16">
-          <div className="flex gap-4 ghl-scroll">
-            {[...integrations, ...integrations].map((t, idx) => (
-              <div
-                key={idx}
-                className="flex-shrink-0 flex items-center gap-2 px-5 py-3 rounded-xl border border-neon-cyan/30 bg-slate-800/80 hover:border-neon-cyan/60 hover:shadow-lg hover:shadow-neon-cyan/20 transition-all duration-300"
-              >
-                <span className="text-xl text-neon-cyan">{t.icon}</span>
-                <span className="text-sm font-semibold text-neon-green whitespace-nowrap">{t.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
+        <MarqueeRow speed={50} className="mb-16">
+          {integrations.map((t, idx) => (
+            <div
+              key={idx}
+              className="flex-shrink-0 flex items-center gap-2 px-5 py-3 rounded-xl border border-neon-cyan/30 bg-slate-800/80 hover:border-neon-cyan/60 hover:shadow-lg hover:shadow-neon-cyan/20 transition-all duration-300"
+            >
+              <span className="text-xl text-neon-cyan">{t.icon}</span>
+              <span className="text-sm font-semibold text-neon-green whitespace-nowrap">{t.label}</span>
+            </div>
+          ))}
+        </MarqueeRow>
 
         {/* Process */}
         <h4 className="text-xl font-semibold text-neon-cyan mb-6 flex items-center gap-2">

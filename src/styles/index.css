@@ -85,10 +85,3 @@ html {
     animation: fadeInUp 0.8s ease forwards;
   }
 }
-
-/* Respect users who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .scroll-left, .scroll-right, .ghl-shot {
-    animation: none !important;
-  }
-}
