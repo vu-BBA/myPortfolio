@@ -128,13 +128,13 @@ const showcase = [
   },
   {
     img: 'ghl/email-appointment-confirmation.jpg',
-    title: 'Custom HTML Email Template',
+    title: 'Whatsapp Automation Wokflows',
     caption: 'Branded appointment-confirmation email hand-coded in the GHL template builder with {{contact}} and {{appointment}} merge fields.',
     tags: ['Email Templates', 'HTML', 'Merge Fields']
   },
   {
     img: 'ghl/csv-contact-import-mapping.jpg',
-    title: 'CSV Contact Database Upload',
+    title: 'Custom HTML Email Template',
     caption: 'Uploaded a client CSV database and mapped every field — names, phones, lead source, case type, tags — into clean GHL contacts.',
     tags: ['Contacts', 'CSV Import']
   },
