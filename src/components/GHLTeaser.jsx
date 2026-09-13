@@ -3,9 +3,9 @@ import { FaFunnelDollar } from 'react-icons/fa'
 import { FiArrowRight } from 'react-icons/fi'
 
 const previews = [
-  { img: '/ghl/workflow-pi-lead-followup.jpg', label: 'Workflows' },
-  { img: '/ghl/pipeline-legal-case-intake.jpg', label: 'Pipelines' },
-  { img: '/ghl/funnel-fifth-avenue-pizza.png', label: 'Funnels' },
+  { img: 'ghl/workflow-pi-lead-followup.jpg', label: 'Workflows' },
+  { img: 'ghl/pipeline-legal-case-intake.jpg', label: 'Pipelines' },
+  { img: 'ghl/funnel-fifth-avenue-pizza.png', label: 'Funnels' },
 ]
 
 export default function GHLTeaser() {
@@ -32,7 +32,7 @@ export default function GHLTeaser() {
                 See the real screenshots from live subaccounts on a dedicated page.
               </p>
               <a
-                href="/ghl.html"
+                href="ghl.html"
                 className="inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-to-r from-neon-green to-emerald-500 text-black font-bold rounded-lg shadow-lg shadow-neon-green/50 hover:scale-105 hover:shadow-neon-green/80 transition-all duration-300"
               >
                 Check My GHL Work <FiArrowRight className="w-5 h-5" />
@@ -41,7 +41,7 @@ export default function GHLTeaser() {
 
             <div className="grid grid-cols-3 gap-3">
               {previews.map((p, idx) => (
-                <a key={idx} href="/ghl.html" className="group block">
+                <a key={idx} href="ghl.html" className="group block">
                   <div className="rounded-lg overflow-hidden border border-neon-green/30 group-hover:border-neon-green/70 transition-all duration-300">
                     <img src={p.img} alt={p.label} loading="lazy" className="w-full h-24 object-cover object-top transition-transform duration-500 group-hover:scale-110" />
                   </div>

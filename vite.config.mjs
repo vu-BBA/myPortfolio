@@ -10,6 +10,7 @@ const extraHosts = process.env.PREVIEW_HOST
   : [];
 
 export default defineConfig({
+  base: "./",
   plugins: [react()],
   server: {
     host: "0.0.0.0",

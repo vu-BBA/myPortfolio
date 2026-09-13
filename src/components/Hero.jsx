@@ -66,7 +66,7 @@ export default function Hero(){
               <FaGithub className="text-lg"/> GitHub
             </a>
             <a 
-              href="/Bushra_Basharat_CV.pdf" 
+              href="Bushra_Basharat_CV.pdf" 
               download 
               className="px-6 py-3 border-2 border-neon-green rounded-lg flex items-center gap-2 text-neon-green hover:bg-neon-green/10 hover:shadow-glow transition duration-300 font-semibold"
             >

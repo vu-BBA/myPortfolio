@@ -108,55 +108,55 @@ const integrations = [
 /* ------------------------------------------------------------------ */
 const showcase = [
   {
-    img: '/ghl/workflow-pi-lead-followup.jpg',
+    img: 'ghl/workflow-pi-lead-followup.jpg',
     title: 'PI Lead Follow-Up Automation',
     caption: 'Form trigger → instant acknowledgment SMS → opportunity created → lead tagged → call task for staff → backup email. Zero manual steps.',
     tags: ['Workflows', 'SMS', 'Tasks']
   },
   {
-    img: '/ghl/workflow-legal-intake-full.jpg',
+    img: 'ghl/workflow-legal-intake-full.jpg',
     title: 'Legal Intake — Full Automation Map',
     caption: 'Branching workflow: new vs retained clients get different paths — confirmation emails, Google Calendar events, tags and review requests.',
     tags: ['Workflows', 'Branching', 'Calendar']
   },
   {
-    img: '/ghl/pipeline-legal-case-intake.jpg',
+    img: 'ghl/pipeline-legal-case-intake.jpg',
     title: 'Legal Case Intake Pipeline',
     caption: 'CRM pipeline with stages New Inquiry → Consultation Booked → Retainer Sent → Case Won, with live contacts moving through.',
     tags: ['Pipelines', 'CRM']
   },
   {
-    img: '/ghl/email-appointment-confirmation.jpg',
+    img: 'ghl/email-appointment-confirmation.jpg',
     title: 'Custom HTML Email Template',
     caption: 'Branded appointment-confirmation email hand-coded in the GHL template builder with {{contact}} and {{appointment}} merge fields.',
     tags: ['Email Templates', 'HTML', 'Merge Fields']
   },
   {
-    img: '/ghl/csv-contact-import-mapping.jpg',
+    img: 'ghl/csv-contact-import-mapping.jpg',
     title: 'CSV Contact Database Upload',
     caption: 'Uploaded a client CSV database and mapped every field — names, phones, lead source, case type, tags — into clean GHL contacts.',
     tags: ['Contacts', 'CSV Import']
   },
   {
-    img: '/ghl/workflow-appointment-reminder.jpg',
+    img: 'ghl/workflow-appointment-reminder.jpg',
     title: 'Appointment Reminder Sequence',
     caption: 'Appointment-status trigger → email → timed wait → SMS reminder, cutting no-shows automatically.',
     tags: ['Workflows', 'Email', 'SMS']
   },
   {
-    img: '/ghl/funnel-fifth-avenue-pizza.png',
+    img: 'ghl/funnel-fifth-avenue-pizza.png',
     title: 'Local Business Funnel + A/B Split',
     caption: 'Lead-capture funnel built for a local pizza brand, set up with a control/variation split test to optimize conversion.',
     tags: ['Funnels', 'A/B Testing']
   },
   {
-    img: '/ghl/workflows-published-list.png',
+    img: 'ghl/workflows-published-list.png',
     title: 'Published Automation Suite',
     caption: 'Seven live workflows: 6-month recall, reminders, instant confirmations, missed-call notifications, no-show reschedule and review requests.',
     tags: ['Automation', 'Reputation']
   },
   {
-    img: '/ghl/workflow-execution-logs.jpg',
+    img: 'ghl/workflow-execution-logs.jpg',
     title: 'Execution Logs — Proof It Runs',
     caption: 'Real execution history showing every step fired for a live contact — executed, skipped and finished as designed.',
     tags: ['Logging', 'QA']
@@ -216,7 +216,7 @@ export default function GHLWork() {
       {/* Top bar */}
       <div className="max-w-6xl mx-auto px-6 pt-8 relative z-10">
         <a
-          href="/"
+          href="./"
           className="inline-flex items-center gap-2 text-neon-cyan hover:text-neon-green font-semibold text-sm border border-neon-cyan/40 rounded-lg px-4 py-2 hover:bg-neon-cyan/10 transition duration-300"
         >
           ← Back to Home
@@ -461,7 +461,7 @@ export default function GHLWork() {
                 anyone touching them.
               </p>
               <div className="flex gap-2 mt-4">
-                {['/ghl/workflow-pi-lead-followup.jpg', '/ghl/pipeline-legal-case-intake.jpg', '/ghl/email-appointment-confirmation.jpg'].map((img, i) => (
+                {['ghl/workflow-pi-lead-followup.jpg', 'ghl/pipeline-legal-case-intake.jpg', 'ghl/email-appointment-confirmation.jpg'].map((img, i) => (
                   <a key={i} href={img} target="_blank" rel="noreferrer" className="w-1/3 rounded-lg overflow-hidden border border-neon-cyan/30 hover:border-neon-cyan/70 transition">
                     <img src={img} alt="Case study screenshot" loading="lazy" className="w-full h-14 object-cover object-top" />
                   </a>

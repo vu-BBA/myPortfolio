@@ -24,7 +24,7 @@ export default function Footer(){
             <p className="text-neon-green font-semibold mb-3 text-sm">Quick Links</p>
             <div className="flex justify-center gap-6 text-sm">
               <a href="#about" className="text-gray-400 hover:text-neon-green transition-colors">About</a>
-              <a href="/ghl.html" className="text-gray-400 hover:text-neon-green transition-colors">GHL Work</a>
+              <a href="ghl.html" className="text-gray-400 hover:text-neon-green transition-colors">GHL Work</a>
               <a href="#projects" className="text-gray-400 hover:text-neon-green transition-colors">Projects</a>
               <a href="#contact" className="text-gray-400 hover:text-neon-green transition-colors">Contact</a>
             </div>

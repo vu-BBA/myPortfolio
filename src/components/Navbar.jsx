@@ -8,7 +8,7 @@ const links = [
   {id:'about', label:'About', icon:<AiOutlineUser/>},
   {id:'skills', label:'Skills', icon:<AiOutlineTool/>},
   {id:'workflows', label:'Workflows', icon:<AiOutlineApi/>},
-  {id:'ghl', label:'GHL', icon:<FaFunnelDollar/>, href:'/ghl.html'},
+  {id:'ghl', label:'GHL', icon:<FaFunnelDollar/>, href:'ghl.html'},
   {id:'projects', label:'Projects', icon:<AiOutlineProject/>},
   {id:'contact', label:'Contact', icon:<AiOutlineMail/>}
 ]
@@ -54,7 +54,7 @@ export default function Navbar(){
             </li>
           ))}
           <li>
-            <a href="/Bushra_Basharat_CV.pdf" download className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-neon-green to-emerald-500 text-black font-bold hover:scale-105 transition-transform duration-300 shadow-lg shadow-neon-green/50">
+            <a href="Bushra_Basharat_CV.pdf" download className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-neon-green to-emerald-500 text-black font-bold hover:scale-105 transition-transform duration-300 shadow-lg shadow-neon-green/50">
               <FiDownload /> <span className="text-sm">Resume</span>
             </a>
           </li>
@@ -83,7 +83,7 @@ export default function Navbar(){
               </li>
             ))}
             <li>
-              <a href="/Bushra_Basharat_CV.pdf" download onClick={()=> setMenuOpen(false)} className="flex items-center gap-3 px-4 py-3 rounded-lg bg-gradient-to-r from-neon-green to-emerald-500 text-black font-bold mt-2">
+              <a href="Bushra_Basharat_CV.pdf" download onClick={()=> setMenuOpen(false)} className="flex items-center gap-3 px-4 py-3 rounded-lg bg-gradient-to-r from-neon-green to-emerald-500 text-black font-bold mt-2">
                 <FiDownload className="text-xl" /> <span>Download Resume</span>
               </a>
             </li>
