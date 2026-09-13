@@ -46,7 +46,7 @@ export default function AIWorkflows() {
               0% { transform: translateX(-50%); }
               100% { transform: translateX(0); }
             }
-            .scroll-left { animation: scrollLeft 40s linear infinite; }
+            .scroll-left { animation: scrollLeft 35s linear infinite; }
             .scroll-right { animation: scrollRight 40s linear infinite; }
             
           `}</style>
