@@ -4,7 +4,7 @@ import { FiMail, FiSend } from 'react-icons/fi'
 import emailjs from '@emailjs/browser'
 
 const EMAIL = 'bushrach147hnd@gmail.com'
-const WHATSAPP = 'https://wa.me/'
+const WHATSAPP = 
 
 export default function Contact(){
   const form = useRef()
