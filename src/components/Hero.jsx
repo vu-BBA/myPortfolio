@@ -85,7 +85,7 @@ export default function Hero(){
             <div className="absolute inset-0 bg-gradient-to-r from-neon-green via-neon-cyan to-neon-purple rounded-full opacity-40 blur-2xl animate-glow"></div>
             
             <img
-              src={profileImg}
+              src={GHL Automation Engineer Workspace.png}
               alt="profile"
              className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 
                           rounded-full 
