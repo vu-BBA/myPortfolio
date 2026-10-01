@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { FaGithub } from 'react-icons/fa'
 import { FiDownload } from 'react-icons/fi'
-import profileImg from '../assets/profile.jpg'
+import workspaceImg from '../assets/GHL Automation Engineer Workspace.png';
 
 export default function Hero(){
   const words = ['AI Automation Engineer', 'GoHighLevel (GHL) Expert', 'n8n Automation Expert', 'AI Agents & LLM Developer', 'Full Stack JavaScript Developer']
