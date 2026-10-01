@@ -4,7 +4,7 @@ import { FiMail, FiSend } from 'react-icons/fi'
 import emailjs from '@emailjs/browser'
 
 const EMAIL = 'bushrach147hnd@gmail.com'
-const WHATSAPP = 
+const WHATSAPP = 'https://wa.me/'
 
 export default function Contact(){
   const form = useRef()
@@ -122,7 +122,7 @@ export default function Contact(){
             <button
               type="submit"
               disabled={status === 'sending'}
-              className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-neon-green to-emerald-500 text-black font-bold rounded-lg hover:scale-110 transform transition shadow-lg shadow-neon-green/50 hover:shadow-neon-green/80 disabled:opacity-50 disabled:scale-100"
+              className="inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-neon-green to-emerald-500 text-black font-bold rounded-lg hover:scale-110 transform transition shadow-lg shadow-neon-green/50 disabled:opacity-50 disabled:hover:scale-100"
             >
               <FiSend className="w-5 h-5" />
               {status === 'sending' ? 'Sending...' : 'Send Message'}
