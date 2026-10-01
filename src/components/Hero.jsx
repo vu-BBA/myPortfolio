@@ -84,10 +84,11 @@ export default function Hero(){
             {/* Glowing border */}
             <div className="absolute inset-0 bg-gradient-to-r from-neon-green via-neon-cyan to-neon-purple rounded-full opacity-40 blur-2xl animate-glow"></div>
             
-            <img
-              src={workspaceImg}
-              alt="profile"
-             className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 
+            
+           <img
+                src={workspaceImg}  // Use the imported variable
+               alt="GHL Automation Engineer Workspace"
+               className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 
                           rounded-full 
                           object-cover 
                           border-4 border-neon-green/60
